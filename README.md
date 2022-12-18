@@ -32,3 +32,24 @@ return
 ```
 Run, C:\notes\nsd.exe -kill
 ```
+
+
+### Switch to another location in notes starting with 'c' using Shortcut CTRL+2
+```
+^2::
+SetKeyDelay,50
+WinActivate, ahk_class SWT_Window0
+SEND,!FL{ENTER}
+SEND,c{DOWN 2}{ENTER}
+return
+```
+
+### Open replicator page in Notes using shortcut ALT+R
+
+```
+!r::
+#IfWinActive ahk_class SWT_Window0
+	run notes:///ClientBookmark?OpenReplication
+#IfWinActive
+return
+```
