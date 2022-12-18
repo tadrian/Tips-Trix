@@ -53,3 +53,15 @@ return
 #IfWinActive
 return
 ```
+
+## Login to Watchguard VPN using shortcut CTRL+1
+```
+^1::
+Run,C:\\Program Files (x86)\\WatchGuard\\WatchGuard Mobile VPN with SSL\\wgsslvpnc.exe
+WinWaitActive,"WatchGuard Mobile VPN with SSL",,2
+Send,{TAB}{TAB}enterpasswordhere{TAB}{ENTER}
+return
+```
+
+
+
