@@ -2,7 +2,7 @@
 # Autohotkey
 
 
-### Move selected mail to folder name starting with 'a' using CTRL+6
+### HCL Notes - Move selected mail to a folder name starting with 'a' using CTRL+6 
 
 ```
 ^6::
@@ -15,7 +15,7 @@ return
 ```
 
 
-### Open java debug console using shortcut CTRL+J
+### HCL Notes - Open java debug console using shortcut CTRL+J
 
 ```
 ;open java debug console
@@ -28,13 +28,13 @@ SEND,j
 return
 ```
 
-### Kill all notes processes, also works with Notes 64bits
+### HCL Notes - Kill all notes processes, also works with Notes 64bits
 ```
 Run, C:\notes\nsd.exe -kill
 ```
 
 
-### Switch to another location in notes starting with 'c' using Shortcut CTRL+2
+### HCL Notes - Switch to another location in notes starting with 'c' using Shortcut CTRL+2
 ```
 ^2::
 SetKeyDelay,50
@@ -44,7 +44,7 @@ SEND,c{DOWN 2}{ENTER}
 return
 ```
 
-### Open replicator page in Notes using shortcut ALT+R
+### HCL Notes - Open replicator page in Notes using shortcut ALT+R
 
 ```
 !r::
