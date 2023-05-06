@@ -63,5 +63,12 @@ Send,{TAB}{TAB}enterpasswordhere{TAB}{ENTER}
 return
 ```
 
+## Run a HCL Notes agent from windows using poweshell
 
+$env:path += ";C:\notes;c:\notes\data"
+$session = New-Object -ComObject Lotus.NotesSession
+$session.Initialize("")
+$db = $session.getDatabase("","db.nsf")
+$agent = $db.getAgent("Testagent")
+$agent.run()
 
