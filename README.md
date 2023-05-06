@@ -63,7 +63,7 @@ Send,{TAB}{TAB}enterpasswordhere{TAB}{ENTER}
 return
 ```
 
-## Run a HCL Notes agent from windows using poweshell
+## Run a HCL Notes agent from windows using powershell
 
 $env:path += ";C:\notes;c:\notes\data"
 $session = New-Object -ComObject Lotus.NotesSession
