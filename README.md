@@ -1,6 +1,18 @@
 
 # Autohotkey
 
+### send delete + f9 
+
+^+d::
+MsgBox, 4, Confirm, Are you sure you want to send Delete + F9?
+IfMsgBox, Yes
+{
+  SendInput, {Delete}
+  SendInput, {F9}
+}
+return
+
+
 
 ### HCL Notes - Move selected mail to a folder name starting with 'a' using CTRL+6 
 
